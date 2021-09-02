@@ -1,18 +1,29 @@
-import cors from 'cors';
-import dotenv from 'dotenv';
-import express from 'express';
+const express = require('express');
+const dotenv = require('dotenv');
+const cors = require('cors');
+const db = require('../src/models');
+const Role = db.role;
 
 const app = express();
 
+const corsOptions = {
+  origin: 'http://localhost:8081',
+};
+
 dotenv.config();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
-app.get('/', (request, response) => {
-  return response.send('BlackBelt');
+app.use(express.urlencoded({ extended: true }));
+
+db.sequelize.sync();
+
+app.get('/', (req, res) => {
+  return res.json({ message: 'BlackBelt Inc.' });
 });
 
-app.listen(3333, () =>
-  console.log('🔥 Server is running on http://localhost:3333'),
+const PORT = process.env.PORT || 3333;
+app.listen(PORT, () =>
+  console.log(`🔥 Server is running on http://localhost:${PORT}`),
 );
