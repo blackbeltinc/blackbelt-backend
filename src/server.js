@@ -23,6 +23,9 @@ app.get('/', (req, res) => {
   return res.json({ message: 'BlackBelt Inc.' });
 });
 
+require('./routes/auth.routes')(app);
+require('./routes/user.routes')(app);
+
 const PORT = process.env.PORT || 3333;
 app.listen(PORT, () =>
   console.log(`🔥 Server is running on http://localhost:${PORT}`),
