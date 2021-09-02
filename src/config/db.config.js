@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 module.exports = {
     HOST: 'blackbeltdb.cfzmklvhj9xc.us-east-1.rds.amazonaws.com',
     USER: 'blackbelt',
