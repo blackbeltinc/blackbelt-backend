@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: 'coverage',
@@ -7,5 +7,3 @@ const config = {
   testMatch: ['**/*.spec.js'],
   bail: true,
 };
-
-export default config;

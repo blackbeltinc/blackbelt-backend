@@ -4,11 +4,11 @@
   "repository": "https://github.com/blackbeltinc/blackbelt-backend",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js",
+    "dev": "nodemon -r esm src/server.js",
     "test": "jest --passWithNoTests",
-    "test:watch": "yarn test --watch",
-    "test:staged": "yarn test --findRelatedTests",
-    "test:ci": "yarn test --coverage",
+    "test:watch": "npm run test --watch",
+    "test:staged": "npm run test --findRelatedTests",
+    "test:ci": "npm run test --coverage",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },

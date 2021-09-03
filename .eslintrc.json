@@ -10,7 +10,7 @@
       "error",
       {
         "endOfLine": "auto"
-      },
+      }
     ],
     "max-len": [
       "warn",
