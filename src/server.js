@@ -1,8 +1,9 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const db = require('../src/models');
-const Role = db.role;
+const db = require('./models');
+
+// const Role = db.role;
 
 const app = express();
 
