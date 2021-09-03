@@ -1,5 +1,5 @@
 <h1 align="center">
-  BlackBelt
+  <img src="logo.png" width="50%" />
 </h1>
 
 <p align="center">
@@ -24,9 +24,9 @@ A proposta do sistema é auxiliar um Mestre de Jiu-Jitsu a acompanhar a evoluç�
 
 ## Tecnologias 💻
 
-- **Front-end**
+- **Back-end**
 
-  - React, utilizando Next.js e ChakraUI
+  - Node.js, utilizando Express
 
 ## Licença 📃
 
