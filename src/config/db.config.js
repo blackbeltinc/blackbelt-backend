@@ -1,13 +1,17 @@
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 module.exports = {
-    HOST: 'blackbeltdb.cfzmklvhj9xc.us-east-1.rds.amazonaws.com',
-    USER: 'blackbelt',
-    PASSWORD: '6m7xPgY4G0gT88VESmbc',
-    DB: 'postgres',
-    dialect: 'postgres',
-    pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000,
-    },
+  HOST: process.env.DB_INSTANCE,
+  USER: process.env.DB_USERNAME,
+  PASSWORD: process.env.DB_PASSWORD,
+  DB: 'postgres',
+  dialect: 'postgres',
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000,
+  },
 };
