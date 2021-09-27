@@ -4,6 +4,7 @@
   "repository": "https://github.com/blackbeltinc/blackbelt-backend",
   "license": "MIT",
   "scripts": {
+    "start": "node src/server.js",
     "dev": "nodemon -r esm src/server.js",
     "test": "jest --passWithNoTests",
     "test:watch": "npm run test --watch",
