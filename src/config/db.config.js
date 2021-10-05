@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 module.exports = {
-  HOST: process.env.DB_INSTANCE,
+  HOST: process.env.DB_ENDPOINT,
   USER: process.env.DB_USERNAME,
   PASSWORD: process.env.DB_PASSWORD,
   DB: 'postgres',
