@@ -5,3 +5,6 @@ module.exports = {
     authJwt,
     verifyRegister
 };
+
+//index.js
+const db = require("./db");
